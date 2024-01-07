@@ -1,5 +1,8 @@
+const colores = ["bluesky", "green", "yellowgreen", "darkblue", "purple", "orange", "brown",
+"black"]
+
 const btn = document.getElementById("btn")
 
 btn.onclick = function () {
-    alert("Hello Word")
+    document.body.style.backgroundColor = colores[Math.floor(Math.random() * colores.length)]
 }
